@@ -1,5 +1,10 @@
 # GrowBot
 
+To run the initial setup, just clone this repo and run:
+``` bash
+$ bash setup.bash
+```
+
 ## TODO:
 
 ### CODE
