@@ -12,6 +12,7 @@ $ bash setup.bash
 - Build out stats page
 - Build out designer page
 - Arduion code to drive motors
+- Convert to venv
 
 ### CAD
 - Chassis CAD

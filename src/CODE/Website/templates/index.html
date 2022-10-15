@@ -1,15 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GrowBot Home</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <h1>Homepage</h1>
+{% extends 'base.html' %}
+    
+{% block title %} GrowBot Dashboard {% endblock %}
 
-	<script src="index.js"></script>
-  </body>
-</html>
+{% block heading %} This is Your Garden {% endblock %}
+
+
+{% block body %}
+    <!-- Shows a camera feed-->
+    <div class="camera tile">
+    </div>
+
+    <!-- Shows an updating graph of temps and humidity-->
+    <div class="stats tile">
+    </div>
+
+    <!-- Shows a the garden status-->
+    <!-- Tells you what your overall garden health is and any warnings-->
+    <!-- Warnings include extra dry soil and or dying/sick plants-->
+    <div class="status tile">
+    </div>
+{% endblock %}

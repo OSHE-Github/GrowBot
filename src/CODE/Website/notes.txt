@@ -1,0 +1,35 @@
+- For streaming the data between the database and the website we will use local
+websockets between python and javascript to increase responsiveness and allow
+for live updating.
+
+- We will make the UI in CSS/HTML ourselves to try and keep the web server light
+and optimized. It is going to be more painful but we don't want to have to load 
+in a bootstrap CDN each time, especially if the bot does not have a wifi connection
+
+- Still need to style and flesh out the HTML. The navbar is currently cursed. Things
+also need to be laid out more effectively
+
+- Navbar is broken down as such:
+    - Dashboard: It's a summary of information for the bot, the garden, and has 
+    has a live video stream from the bot.
+    - Stats: Give you much more detailed statistics and graphs. Allows you to see
+    the per plant info.
+    - Designer: Allows you to design the garden so that growbot knows how to plant
+    the garden eventually.
+
+- Notes on drive protocol:
+    - The drive train will be the arduino that controls the speed of the wheels
+    with feedback from encoders for the speed
+    - Localization will be done with something else (TBD)
+    - Drive train will communicate with ROS2 instance with ROSSerial over USB
+
+- Implement Protocol:
+    - Eventually, we will be able to use implements to swap tools for picking weeds, 
+    planting seeds, and other functions we wish to add. The idea is to create a 
+    relatively standard and easy protocol to promote others to create extensions
+    for the bot.
+    - The first step will be a handshake that identifies dimensions of the module
+    and it's attributes (what it controls).
+    - Communcation can be done through ROSSerial over usb to arduion controlled
+    implements.
+    - Send messages back and forth as json packages.
