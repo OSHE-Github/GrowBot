@@ -27,3 +27,34 @@ body {
     background-color: #FFFF00;
     color: #000000;
 }
+
+.tile {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    margin-inside: 5px;
+    box-shadow: 0 0 5px 2px #000;
+}
+
+.dashboardgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.camera {
+    text-align: center;
+}
+
+.camerafeed {
+    width: 85%;
+}
+
+.stats {
+    grid-colum: auto;
+    grid-row: 2;
+}
+
+.status {
+    grid-colum: auto;
+    grid-row: 2;
+}

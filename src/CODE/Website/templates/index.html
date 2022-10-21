@@ -8,15 +8,20 @@
 {% block body %}
     <!-- Shows a camera feed-->
     <div class="camera tile">
+        <img class="camerafeed" src="{{ url_for('video_feed') }}">
     </div>
+    <div class="dashboardgrid">
 
-    <!-- Shows an updating graph of temps and humidity-->
-    <div class="stats tile">
-    </div>
+        <!-- Shows an updating graph of temps and humidity-->
+        <div class="stats tile">
+            <h1>Stats</h1>
+        </div>
 
-    <!-- Shows a the garden status-->
-    <!-- Tells you what your overall garden health is and any warnings-->
-    <!-- Warnings include extra dry soil and or dying/sick plants-->
-    <div class="status tile">
+        <!-- Shows a the garden status-->
+        <!-- Tells you what your overall garden health is and any warnings-->
+        <!-- Warnings include extra dry soil and or dying/sick plants, weather-->
+        <div class="status tile">
+            <h1>Status</h1>
+        </div>
     </div>
 {% endblock %}

@@ -5,6 +5,11 @@ To run the initial setup, just clone this repo and run:
 $ bash setup.bash
 ```
 
+To run the website in debug, run the following command in the same directory as the index.py in /src/CODE/Website:
+```bash
+flask --app index run
+```
+
 ## TODO:
 
 ### CODE
