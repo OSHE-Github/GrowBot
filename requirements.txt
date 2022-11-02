@@ -1,4 +1,6 @@
+asyncio
 flask
 pysqlite3
 opencv-python
 opencv-contrib-python
+websockets

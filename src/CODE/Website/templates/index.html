@@ -10,11 +10,12 @@
     <div class="camera tile">
         <img class="camerafeed" src="{{ url_for('video_feed') }}">
     </div>
+
     <div class="dashboardgrid">
 
         <!-- Shows an updating graph of temps and humidity-->
         <div class="stats tile">
-            <h1>Stats</h1>
+            <canvas id="dashStats"></canvas>
         </div>
 
         <!-- Shows a the garden status-->

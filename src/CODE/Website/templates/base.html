@@ -21,6 +21,7 @@
 
       {% block body %} {% endblock %}
 
-	<script src="index.js"></script>
+    <script src="{{ url_for('static', filename='scripts/node_modules/chartjs/chart.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
   </body>
 </html>

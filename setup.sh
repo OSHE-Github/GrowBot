@@ -2,8 +2,9 @@
 
 
 # Install dependencies
-sudo apt install nginx python3-pip # For webserver
+sudo apt install nginx python3-pip npm# For webserver
 pip install -r requirements.txt
+npm install
 
 # Install ROS
 locale
