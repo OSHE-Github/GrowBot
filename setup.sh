@@ -2,7 +2,7 @@
 
 
 # Install dependencies
-sudo apt install nginx python3-pip npm# For webserver
+sudo apt install nginx python3-pip npm
 pip install -r requirements.txt
 npm install
 
